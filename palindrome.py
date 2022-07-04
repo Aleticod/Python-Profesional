@@ -1,5 +1,9 @@
+# Python module to know if a string is palindrome
+
 def in_palindrome(string: str) -> bool:
-    string = string.replace(" ","").lower()
+    # Return True if the string is palindrome
+    string = string.replace(" ","")
+    string = string.lower()
     string_reverse = string[::-1]
     return string == string_reverse
 
