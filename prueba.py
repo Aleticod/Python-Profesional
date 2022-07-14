@@ -1,18 +1,12 @@
 # Python module to know if a number is prime
 def is_prime(number: int) -> bool:
     # Return True if number is prime or False if the number is not prime
-    limit = (number / 2)
-    i = 2
-    condition = True
-    if number == 1:
-        condition = False
+    if number == 2:
+        return True
+    elif number == 1 or number % 2 == 0 or number % 3 == 0:
+        return False
     else:
-        while i <= limit:
-            if(number % i == 0):
-                condition = False
-                break
-            i += 1
-    return condition
+        return True
 
 
 def run():
