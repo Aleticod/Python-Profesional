@@ -18,7 +18,7 @@ def is_prime(number: int) -> bool:
 def run():
     for i in range (1, 1000):
         if is_prime(i):
-           print(i)
+            print('Numero prime: ' + str(i))
 
 if __name__ == '__main__':
     run()
